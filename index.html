@@ -5,7 +5,8 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 
 <title>
@@ -40,9 +41,7 @@ href="style.css">
 </head>
 
 
-
 <body>
-
 
 
 <!-- LOGIN SCREEN -->
@@ -60,13 +59,11 @@ href="style.css">
 </div>
 
 
-
 <h1>
 
 Bitcoin Vault
 
 </h1>
-
 
 
 <p>
@@ -76,19 +73,16 @@ Private Access
 </p>
 
 
-
 <input
 id="loginEmail"
 type="email"
 placeholder="Email">
 
 
-
 <input
 id="loginPassword"
 type="password"
 placeholder="Password">
-
 
 
 <button
@@ -100,41 +94,25 @@ Login
 </button>
 
 
-
 <p id="loginMessage"></p>
 
 
-
 </div>
 
 
 </div>
-
-
-
-
 
 
 <div id="particles"></div>
 
 
-
-
-
 <div class="dashboard">
-
-
-
 
 
 <header class="header">
 
 
-
-
-
 <div class="logo-area">
-
 
 
 <div class="logo">
@@ -142,8 +120,6 @@ Login
 ₿
 
 </div>
-
-
 
 
 <div>
@@ -156,7 +132,6 @@ Bitcoin Vault
 </h1>
 
 
-
 <p>
 
 Digital Asset Management Dashboard
@@ -164,36 +139,22 @@ Digital Asset Management Dashboard
 </p>
 
 
-
 </div>
 
 
-
 </div>
-
-
-
-
-
 
 
 <div class="header-actions">
 
 
-
-
-
-<button id="languageBtn"
+<button
+id="languageBtn"
 class="btn btn-secondary">
 
 🇮🇹 Italiano
 
 </button>
-
-
-
-
-
 
 
 <div class="status">
@@ -202,9 +163,8 @@ class="btn btn-secondary">
 <span class="status-dot"></span>
 
 
-
-
-<span data-en="Blockchain Connected"
+<span
+data-en="Blockchain Connected"
 data-it="Blockchain Connessa">
 
 Blockchain Connected
@@ -212,45 +172,28 @@ Blockchain Connected
 </span>
 
 
-
 </div>
 
 
-
-
 </div>
-
-
-
-
 
 
 </header>
 
 
-
-
-
-
-
-
-
 <main class="cards">
 
 
-
-
-
-
+<!-- ORIGINAL PORTFOLIO BALANCE -->
 
 <section class="card">
-
 
 
 <p class="balance-title">
 
 
-<span data-en="Total Portfolio Balance"
+<span
+data-en="Total Portfolio Balance"
 data-it="Valore Totale Portafoglio">
 
 Total Portfolio Balance
@@ -261,18 +204,13 @@ Total Portfolio Balance
 </p>
 
 
-
-
-
-<div class="balance"
+<div
+class="balance"
 id="walletValue">
 
 Loading...
 
 </div>
-
-
-
 
 
 <span class="currency">
@@ -282,20 +220,16 @@ USD
 </span>
 
 
-
-
-
-
 <p class="btc-holdings">
 
 
-<span data-en="BTC Holdings:"
+<span
+data-en="BTC Holdings:"
 data-it="Possesso BTC:">
 
 BTC Holdings:
 
 </span>
-
 
 
 <strong id="btcBalance">
@@ -305,25 +239,19 @@ BTC Holdings:
 </strong>
 
 
-
 </p>
-
-
-
-
-
 
 
 <p class="btc-holdings">
 
 
-<span data-en="EUR Value:"
+<span
+data-en="EUR Value:"
 data-it="Valore EUR:">
 
 EUR Value:
 
 </span>
-
 
 
 <strong id="eurValue">
@@ -333,32 +261,22 @@ Loading...
 </strong>
 
 
-
 </p>
-
-
-
 
 
 </section>
 
 
-
-
-
-
-
-
+<!-- ORIGINAL WALLET OWNER -->
 
 <section class="card owner">
-
 
 
 <p class="balance-title">
 
 
-
-<span data-en="Wallet Owner"
+<span
+data-en="Wallet Owner"
 data-it="Proprietario Wallet">
 
 Wallet Owner
@@ -366,11 +284,7 @@ Wallet Owner
 </span>
 
 
-
 </p>
-
-
-
 
 
 <div class="owner-name">
@@ -380,7 +294,106 @@ Antonella Ceriani
 </div>
 
 
+<p>
 
+Premium Bitcoin Holder
+
+</p>
+
+
+</section>
+
+
+<!-- ORIGINAL WALLET INFORMATION -->
+
+<section class="card">
+
+
+<p class="balance-title">
+
+
+<span
+data-en="Wallet Information"
+data-it="Informazioni Wallet">
+
+Wallet Information
+
+</span>
+
+
+</p>
+
+
+<div
+id="walletAddress"
+class="wallet-address">
+
+bc1qamgjuxaywqls56h7rg7afga3m6rgqwfkew688k
+
+</div>
+
+
+<div class="buttons">
+
+
+<button
+id="copyWallet"
+class="btn btn-primary">
+
+Copy Wallet
+
+</button>
+
+
+<button
+class="btn btn-secondary">
+
+Share
+
+</button>
+
+
+<a
+href="https://wa.me/447918892797"
+target="_blank"
+class="btn btn-whatsapp">
+
+WhatsApp Contact
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+<!-- =====================================================
+     SECOND BLOCKED ACCOUNT
+===================================================== -->
+
+<section class="card blocked-account">
+
+
+<div class="blocked-header">
+
+
+<div>
+
+
+<p class="balance-title">
+
+Blockchain Account
+
+</p>
+
+
+<div class="owner-name">
+
+Antonella Ceriani
+
+</div>
 
 
 <p>
@@ -390,115 +403,272 @@ Premium Bitcoin Holder
 </p>
 
 
+</div>
+
+
+<div class="blocked-status">
+
+🔒 BLOCKED BY BLOCKCHAIN
+
+</div>
+
+
+</div>
+
+
+<!-- SECOND ACCOUNT BTC BALANCE -->
+
+<div class="blocked-btc">
+
+
+<span>
+
+BTC Holdings
+
+</span>
+
+
+<strong>
+
+41.77 BTC
+
+</strong>
+
+
+</div>
+
+
+<p class="blocked-description">
+
+This account is currently blocked and cannot
+be accessed until the required verification
+process is completed.
+
+</p>
+
+
+<!-- PAYMENT BREAKDOWN -->
+
+<div class="blocked-details">
+
+
+<div class="payment-row">
+
+
+<span>
+
+Required amount (35%)
+
+</span>
+
+
+<strong id="blocked35">
+
+€20,433.88
+
+</strong>
+
+
+</div>
+
+
+<div class="payment-row">
+
+
+<span>
+
+Remaining amount (65%)
+
+</span>
+
+
+<strong id="blocked65">
+
+€37,948.63
+
+</strong>
+
+
+</div>
+
+
+<div class="payment-row total-row">
+
+
+<span>
+
+Total amount
+
+</span>
+
+
+<strong id="blockedTotal">
+
+€58,382.51
+
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+<button
+id="unlockAccount"
+class="btn btn-primary unlock-btn">
+
+🔓 Unlock Account
+
+</button>
 
 
 </section>
 
 
+<!-- =====================================================
+     UNLOCK MODAL
+===================================================== -->
+
+<div
+id="unlockModal"
+class="unlock-modal">
 
 
+<div class="unlock-modal-content">
 
 
+<button
+id="closeUnlockModal"
+class="modal-close">
+
+×
+
+</button>
 
 
+<div class="modal-icon">
 
-<section class="card">
+🔒
 
-
-
-<p class="balance-title">
-
+</div>
 
 
-<span data-en="Wallet Information"
-data-it="Informazioni Wallet">
+<h2>
 
-Wallet Information
+Blockchain Account Locked
 
-</span>
+</h2>
 
+
+<p>
+
+Blockchain-account demonstration.
 
 
 </p>
 
 
+<div class="modal-payment">
 
 
+<div>
 
 
+<span>
 
-<div id="walletAddress"
-class="wallet-address">
+35%
 
-
-bc1qamgjuxaywqls56h7rg7afga3m6rgqwfkew688k
-
-
-</div>
+</span>
 
 
+<strong id="modal35">
 
+€20,433.88
 
-
-
-<div class="buttons">
-
-
-
-<button id="copyWallet"
-class="btn btn-primary">
-
-
-Copy Wallet
-
-
-</button>
-
-
-
-
-
-<button class="btn btn-secondary">
-
-
-Share
-
-
-</button>
-
-
-
-
-
-<a href="https://wa.me/447918892797"
-target="_blank"
-class="btn btn-whatsapp">
-
-
-WhatsApp Contact
-
-
-</a>
-
-
-
+</strong>
 
 
 </div>
 
 
+<div>
 
 
+<span>
 
-</section>
- 
+65%
+
+</span>
+
+
+<strong id="modal65">
+
+€37,948.63
+
+</strong>
+
+
+</div>
+
+
+<div class="modal-total">
+
+
+<span>
+
+Total
+
+</span>
+
+
+<strong id="modalTotal">
+
+€58,382.51
+
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+<p class="modal-note">
+
+
+Blockchain payment is being requested.
+
+</p>
+
+
+<button
+id="closeUnlockModalButton"
+class="btn btn-secondary">
+
+Close
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+<!-- ORIGINAL PORTFOLIO STATISTICS -->
+
 <section class="card">
 
 
 <h2>
 
 
-<span data-en="Portfolio Statistics"
+<span
+data-en="Portfolio Statistics"
 data-it="Statistiche Portafoglio">
 
 Portfolio Statistics
@@ -509,14 +679,7 @@ Portfolio Statistics
 </h2>
 
 
-
-
-
 <div class="stats">
-
-
-
-
 
 
 <div>
@@ -529,8 +692,6 @@ BTC Price
 </span>
 
 
-
-
 <strong id="btcPrice">
 
 Loading...
@@ -538,14 +699,7 @@ Loading...
 </strong>
 
 
-
-
 </div>
-
-
-
-
-
 
 
 <div>
@@ -558,8 +712,6 @@ Network
 </span>
 
 
-
-
 <strong>
 
 Bitcoin Mainnet
@@ -567,14 +719,7 @@ Bitcoin Mainnet
 </strong>
 
 
-
-
 </div>
-
-
-
-
-
 
 
 <div>
@@ -587,8 +732,6 @@ Security Score
 </span>
 
 
-
-
 <strong class="security">
 
 98%
@@ -596,31 +739,16 @@ Security Score
 </strong>
 
 
-
-
 </div>
 
 
-
-
-
-
-
 </div>
-
-
-
 
 
 </section>
 
 
-
-
-
-
-
-
+<!-- ORIGINAL PORTFOLIO ALLOCATION -->
 
 <section class="card">
 
@@ -628,7 +756,8 @@ Security Score
 <h2>
 
 
-<span data-en="Portfolio Allocation"
+<span
+data-en="Portfolio Allocation"
 data-it="Allocazione Portafoglio">
 
 Portfolio Allocation
@@ -639,40 +768,23 @@ Portfolio Allocation
 </h2>
 
 
-
-
-
-
-
 <div class="chart">
-
 
 
 <div class="btc-fill">
 
-
 100% BTC
 
-
 </div>
 
 
-
 </div>
-
-
-
 
 
 </section>
 
 
-
-
-
-
-
-
+<!-- ORIGINAL SYSTEM STATUS -->
 
 <section class="card">
 
@@ -680,12 +792,11 @@ Portfolio Allocation
 <h2>
 
 
-<span data-en="System Status"
+<span
+data-en="System Status"
 data-it="Stato Sistema">
 
-
 System Status
-
 
 </span>
 
@@ -693,20 +804,14 @@ System Status
 </h2>
 
 
-
-
-
-
-
 <p>
 
 
-<span data-en="Last Synchronization:"
+<span
+data-en="Last Synchronization:"
 data-it="Ultima Sincronizzazione:">
 
-
 Last Synchronization:
-
 
 </span>
 
@@ -714,168 +819,83 @@ Last Synchronization:
 </p>
 
 
-
-
-
-
-
 <strong id="syncTime">
-
 
 Loading...
 
-
 </strong>
-
-
-
-
-
-
 
 
 <p class="network">
 
 
-
-<span data-en="Network Status:"
+<span
+data-en="Network Status:"
 data-it="Stato Rete:">
-
 
 Network Status:
 
-
 </span>
-
-
-
 
 
 <span>
 
-
 Online
-
 
 </span>
 
 
-
-
-
 </p>
-
-
-
-
-
 
 
 </section>
 
 
-
-
-
-
-
-
 </main>
-
-
-
-
-
-
-
 
 
 <footer class="footer">
 
 
-
 <p>
-
 
 © 2026 Bitcoin Vault Dashboard
 
-
 </p>
-
-
-
 
 
 <p>
 
-
 Secure • Decentralized • Blockchain Powered
 
-
 </p>
-
-
 
 
 </footer>
 
 
-
-
-
-
-
-
 </div>
-
-
-
-
-
-
-
 
 
 <div class="floating-bitcoin">
 
-
 ₿
-
 
 </div>
 
 
-
-
-
-
-
-
-
-<div id="toast"
+<div
+id="toast"
 class="toast">
-
 
 Wallet copied successfully
 
-
 </div>
-
-
-
-
-
-
-
 
 
 <script src="app.js"></script>
 
 
-
-
-
 </body>
-
 
 </html>
