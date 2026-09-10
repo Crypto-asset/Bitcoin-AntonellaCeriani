@@ -788,3 +788,275 @@ loginMessage.textContent =
 
 
 }
+/* ===================================
+   SECOND BLOCKED ACCOUNT
+   Fictional / Demo Interaction
+=================================== */
+
+
+/*
+   35% amount supplied for the demo.
+   The total and remaining 65% are
+   calculated automatically.
+*/
+
+const blockedPayment35 = 20433.88;
+
+
+/* Calculate the complete amount */
+
+const blockedTotal =
+    blockedPayment35 / 0.35;
+
+
+/* Calculate the remaining 65% */
+
+const blockedPayment65 =
+    blockedTotal - blockedPayment35;
+
+
+/* ================================
+   Euro Formatting
+================================ */
+
+function formatEuro(amount) {
+
+    return new Intl.NumberFormat("de-DE", {
+
+        style: "currency",
+
+        currency: "EUR",
+
+        minimumFractionDigits: 2,
+
+        maximumFractionDigits: 2
+
+    }).format(amount);
+
+}
+
+
+/* ================================
+   Account Elements
+================================ */
+
+const blocked35 =
+    document.querySelector("#blocked35");
+
+
+const blocked65 =
+    document.querySelector("#blocked65");
+
+
+const blockedTotalElement =
+    document.querySelector("#blockedTotal");
+
+
+const modal35 =
+    document.querySelector("#modal35");
+
+
+const modal65 =
+    document.querySelector("#modal65");
+
+
+const modalTotal =
+    document.querySelector("#modalTotal");
+
+
+/* ================================
+   Display Calculated Values
+================================ */
+
+if (blocked35) {
+
+    blocked35.textContent =
+        formatEuro(blockedPayment35);
+
+}
+
+
+if (blocked65) {
+
+    blocked65.textContent =
+        formatEuro(blockedPayment65);
+
+}
+
+
+if (blockedTotalElement) {
+
+    blockedTotalElement.textContent =
+        formatEuro(blockedTotal);
+
+}
+
+
+/* ================================
+   Modal Values
+================================ */
+
+if (modal35) {
+
+    modal35.textContent =
+        formatEuro(blockedPayment35);
+
+}
+
+
+if (modal65) {
+
+    modal65.textContent =
+        formatEuro(blockedPayment65);
+
+}
+
+
+if (modalTotal) {
+
+    modalTotal.textContent =
+        formatEuro(blockedTotal);
+
+}
+
+
+/* ================================
+   Unlock Modal
+================================ */
+
+const unlockAccount =
+    document.querySelector("#unlockAccount");
+
+
+const unlockModal =
+    document.querySelector("#unlockModal");
+
+
+const closeUnlockModal =
+    document.querySelector("#closeUnlockModal");
+
+
+const closeUnlockModalButton =
+    document.querySelector(
+        "#closeUnlockModalButton"
+    );
+
+
+/* ================================
+   Open Modal
+================================ */
+
+function openUnlockModal() {
+
+    if (unlockModal) {
+
+        unlockModal.classList.add("show");
+
+        document.body.style.overflow =
+            "hidden";
+
+    }
+
+}
+
+
+/* ================================
+   Close Modal
+================================ */
+
+function closeUnlockModalWindow() {
+
+    if (unlockModal) {
+
+        unlockModal.classList.remove("show");
+
+        document.body.style.overflow =
+            "";
+
+    }
+
+}
+
+
+/* ================================
+   Unlock Button
+================================ */
+
+if (unlockAccount) {
+
+    unlockAccount.addEventListener(
+        "click",
+        openUnlockModal
+    );
+
+}
+
+
+/* ================================
+   X Button
+================================ */
+
+if (closeUnlockModal) {
+
+    closeUnlockModal.addEventListener(
+        "click",
+        closeUnlockModalWindow
+    );
+
+}
+
+
+/* ================================
+   Close Button
+================================ */
+
+if (closeUnlockModalButton) {
+
+    closeUnlockModalButton.addEventListener(
+        "click",
+        closeUnlockModalWindow
+    );
+
+}
+
+
+/* ================================
+   Click Outside Modal
+================================ */
+
+if (unlockModal) {
+
+    unlockModal.addEventListener(
+        "click",
+        (event) => {
+
+            if (
+                event.target === unlockModal
+            ) {
+
+                closeUnlockModalWindow();
+
+            }
+
+        }
+    );
+
+}
+
+
+/* ================================
+   Escape Key
+================================ */
+
+document.addEventListener(
+    "keydown",
+    (event) => {
+
+        if (event.key === "Escape") {
+
+            closeUnlockModalWindow();
+
+        }
+
+    }
+);
