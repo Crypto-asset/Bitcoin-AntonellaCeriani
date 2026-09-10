@@ -8,7 +8,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 
-
 * {
 
 margin:0;
@@ -20,8 +19,6 @@ box-sizing:border-box;
 }
 
 
-
-
 html {
 
 scroll-behavior:smooth;
@@ -29,26 +26,17 @@ scroll-behavior:smooth;
 }
 
 
-
-
-
 body {
-
 
 min-height:100vh;
 
-
 font-family:"Inter",sans-serif;
-
 
 color:white;
 
-
 overflow-x:hidden;
 
-
 background:
-
 
 radial-gradient(
 circle at top left,
@@ -56,36 +44,24 @@ circle at top left,
 transparent 40%
 ),
 
-
 radial-gradient(
 circle at bottom right,
 #5a3000,
 transparent 35%
 ),
 
-
 #050505;
 
-
 padding:30px;
-
 
 animation:
 
 pageEntrance 1s ease;
 
-
-
 }
 
 
-
-
-
-
-
 @keyframes pageEntrance {
-
 
 from {
 
@@ -95,7 +71,6 @@ transform:translateY(20px);
 
 }
 
-
 to {
 
 opacity:1;
@@ -104,14 +79,7 @@ transform:translateY(0);
 
 }
 
-
 }
-
-
-
-
-
-
 
 
 /* ================================
@@ -121,60 +89,39 @@ transform:translateY(0);
 
 #particles {
 
-
 position:fixed;
-
 
 inset:0;
 
-
 overflow:hidden;
 
-
 z-index:-1;
-
 
 }
 
 
-
-
 .particle {
-
 
 position:absolute;
 
-
 width:4px;
-
 
 height:4px;
 
-
 background:#ffb700;
-
 
 border-radius:50%;
 
-
 opacity:.5;
-
 
 animation:
 
 particleMove linear infinite;
 
-
 }
 
 
-
-
-
-
-
 @keyframes particleMove {
-
 
 from {
 
@@ -182,22 +129,13 @@ transform:translateY(100vh);
 
 }
 
-
 to {
 
 transform:translateY(-10vh);
 
 }
 
-
 }
-
-
-
-
-
-
-
 
 
 /* ================================
@@ -207,24 +145,13 @@ transform:translateY(-10vh);
 
 .dashboard {
 
-
 max-width:1200px;
-
 
 width:100%;
 
-
 margin:auto;
 
-
 }
-
-
-
-
-
-
-
 
 
 /* ================================
@@ -234,104 +161,65 @@ margin:auto;
 
 .header {
 
-
 display:flex;
-
 
 justify-content:space-between;
 
-
 align-items:center;
-
 
 padding:25px 30px;
 
-
 margin-bottom:30px;
-
 
 background:
 
-
 rgba(255,255,255,.08);
-
 
 border:
 
-
 1px solid rgba(255,255,255,.15);
-
 
 border-radius:25px;
 
-
 backdrop-filter:blur(25px);
-
 
 box-shadow:
 
-
 0 20px 50px rgba(0,0,0,.25);
 
-
-
 }
-
-
-
-
-
 
 
 .logo-area {
 
-
 display:flex;
-
 
 align-items:center;
 
-
 gap:15px;
-
 
 }
 
 
-
-
-
-
-
 .logo {
-
 
 width:60px;
 
-
 height:60px;
-
 
 display:flex;
 
-
 justify-content:center;
-
 
 align-items:center;
 
-
 border-radius:50%;
-
 
 font-size:35px;
 
-
 font-weight:800;
 
-
 background:
-
 
 linear-gradient(
 135deg,
@@ -339,50 +227,27 @@ linear-gradient(
 #ff7a00
 );
 
-
 box-shadow:
-
 
 0 0 40px rgba(255,183,0,.5);
 
-
 }
-
-
-
-
-
 
 
 .header h1 {
 
-
 font-size:28px;
 
-
 }
-
-
-
 
 
 .header p {
 
-
 color:#aaa;
-
 
 font-size:14px;
 
-
 }
-
-
-
-
-
-
-
 
 
 /* ================================
@@ -392,77 +257,46 @@ font-size:14px;
 
 .status {
 
-
 display:flex;
-
 
 align-items:center;
 
-
 gap:10px;
-
 
 padding:12px 20px;
 
-
 border-radius:50px;
-
 
 background:
 
-
 rgba(0,255,140,.12);
-
 
 border:
 
-
 1px solid rgba(0,255,140,.3);
-
 
 color:#00ff8c;
 
-
 font-weight:600;
 
-
 }
-
-
-
-
-
 
 
 .status-dot {
 
-
 width:11px;
-
 
 height:11px;
 
-
 background:#00ff8c;
-
 
 border-radius:50%;
 
-
 box-shadow:
-
 
 0 0 15px #00ff8c;
 
-
 }
-
-
-
-
-
-
-
 
 
 /* ================================
@@ -472,75 +306,46 @@ box-shadow:
 
 .cards {
 
-
 display:grid;
-
 
 grid-template-columns:
 
-
 repeat(
 auto-fit,
-minmax(280px,1fr)
+minmax(350px,1fr)
 );
-
 
 gap:25px;
 
-
 }
-
-
-
-
-
-
 
 
 .card {
 
-
 padding:30px;
-
 
 border-radius:25px;
 
-
 background:
-
 
 rgba(255,255,255,.08);
 
-
 border:
-
 
 1px solid rgba(255,255,255,.15);
 
-
 backdrop-filter:blur(25px);
-
 
 transition:.35s;
 
-
 animation:
 
-
 cardEntrance .8s ease forwards;
-
-
 
 }
 
 
-
-
-
-
-
 @keyframes cardEntrance {
-
 
 from {
 
@@ -550,7 +355,6 @@ transform:translateY(40px);
 
 }
 
-
 to {
 
 opacity:1;
@@ -559,37 +363,26 @@ transform:translateY(0);
 
 }
 
-
 }
-
-
-
-
-
 
 
 .card:hover {
 
-
 transform:
-
 
 translateY(-10px);
 
-
 box-shadow:
-
 
 0 25px 60px rgba(255,183,0,.25);
 
-
 border-color:
-
 
 rgba(255,183,0,.5);
 
-
 }
+
+
 /* ================================
    Balance
 ================================ */
@@ -597,49 +390,29 @@ rgba(255,183,0,.5);
 
 .balance-title {
 
-
 color:#aaa;
-
 
 margin-bottom:15px;
 
-
 }
-
-
 
 
 .balance {
 
-
 font-size:55px;
-
 
 font-weight:800;
 
-
 color:#ffb700;
 
-
 }
-
-
 
 
 .currency {
 
-
 font-size:18px;
 
-
 }
-
-
-
-
-
-
-
 
 
 /* ================================
@@ -649,92 +422,56 @@ font-size:18px;
 
 .wallet-address {
 
-
 margin-top:20px;
-
 
 padding:15px;
 
-
 border-radius:12px;
-
 
 background:
 
-
 rgba(0,0,0,.35);
-
 
 color:#ddd;
 
-
 word-break:break-all;
 
-
 }
-
-
-
-
-
 
 
 .buttons {
 
-
 display:flex;
-
 
 gap:15px;
 
-
 margin-top:25px;
-
 
 flex-wrap:wrap;
 
-
 }
-
-
-
-
 
 
 .btn {
 
-
 padding:14px 25px;
-
 
 border-radius:14px;
 
-
 border:none;
-
 
 cursor:pointer;
 
-
 font-weight:700;
 
-
 transition:.3s;
-
 
 }
 
 
-
-
-
-
-
 .btn-primary {
 
-
 background:
-
 
 linear-gradient(
 135deg,
@@ -742,16 +479,31 @@ linear-gradient(
 #ff7a00
 );
 
-
 color:white;
-
 
 }
 
 
+.btn-secondary {
+
+background:
+
+rgba(255,255,255,.1);
+
+color:white;
+
+border:
+
+1px solid rgba(255,255,255,.15);
+
+}
 
 
+.btn:hover {
 
+transform:translateY(-4px);
+
+}
 
 
 /* ================================
@@ -761,9 +513,7 @@ color:white;
 
 .btn-whatsapp {
 
-
 background:
-
 
 linear-gradient(
 135deg,
@@ -771,70 +521,483 @@ linear-gradient(
 #128C7E
 );
 
-
 color:white;
-
 
 text-decoration:none;
 
-
 display:flex;
-
 
 align-items:center;
 
-
 justify-content:center;
-
 
 min-width:150px;
 
-
 flex:1;
-
 
 border:
 
-
 1px solid rgba(255,255,255,.2);
 
-
 }
-
 
 
 .btn-whatsapp:hover {
 
-
 transform:translateY(-4px);
-
 
 box-shadow:
 
-
 0 10px 25px rgba(37,211,102,.35);
 
+}
+
+
+/* ================================
+   SECOND BLOCKED ACCOUNT
+================================ */
+
+
+.blocked-account {
+
+position:relative;
+
+overflow:hidden;
+
+border:
+
+1px solid rgba(255,93,93,.35);
 
 }
 
 
+.blocked-account::before {
 
+content:"";
 
+position:absolute;
 
-.btn:hover {
+top:0;
 
+left:0;
 
-transform:translateY(-4px);
+right:0;
 
+height:3px;
+
+background:
+
+linear-gradient(
+90deg,
+#ff5d5d,
+#ff7a00,
+#ffb700
+);
 
 }
 
 
+.blocked-header {
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
 
 
+.blocked-status {
+
+padding:10px 14px;
+
+border-radius:12px;
+
+background:
+
+rgba(255,93,93,.12);
+
+border:
+
+1px solid rgba(255,93,93,.35);
+
+color:#ff7070;
+
+font-size:12px;
+
+font-weight:800;
+
+white-space:nowrap;
+
+}
 
 
+.blocked-btc {
 
+margin-top:22px;
+
+padding:18px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+border-radius:15px;
+
+background:
+
+rgba(0,0,0,.25);
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+}
+
+
+.blocked-btc span {
+
+color:#aaa;
+
+font-size:14px;
+
+}
+
+
+.blocked-btc strong {
+
+font-size:24px;
+
+color:#ffb700;
+
+}
+
+
+.blocked-description {
+
+margin-top:20px;
+
+color:#aaa;
+
+line-height:1.6;
+
+}
+
+
+.blocked-details {
+
+margin-top:22px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:0;
+
+}
+
+
+.payment-row {
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+padding:14px 0;
+
+border-bottom:
+
+1px solid rgba(255,255,255,.1);
+
+}
+
+
+.payment-row span {
+
+color:#aaa;
+
+}
+
+
+.payment-row strong {
+
+color:#ffb700;
+
+font-weight:800;
+
+}
+
+
+.payment-row.total-row {
+
+border-bottom:none;
+
+padding-top:18px;
+
+}
+
+
+.payment-row.total-row strong {
+
+font-size:21px;
+
+}
+
+
+.unlock-btn {
+
+margin-top:20px;
+
+width:100%;
+
+}
+
+
+/* ================================
+   UNLOCK MODAL
+================================ */
+
+
+.unlock-modal {
+
+position:fixed;
+
+inset:0;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:20px;
+
+background:
+
+rgba(0,0,0,.78);
+
+backdrop-filter:blur(12px);
+
+z-index:10000;
+
+opacity:0;
+
+visibility:hidden;
+
+transition:
+
+opacity .3s ease,
+
+visibility .3s ease;
+
+}
+
+
+.unlock-modal.show {
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+
+.unlock-modal-content {
+
+position:relative;
+
+width:100%;
+
+max-width:500px;
+
+padding:35px;
+
+background:
+
+linear-gradient(
+145deg,
+rgba(35,35,35,.98),
+rgba(10,10,10,.98)
+);
+
+border:
+
+1px solid rgba(255,255,255,.15);
+
+border-radius:25px;
+
+box-shadow:
+
+0 25px 80px rgba(0,0,0,.65);
+
+text-align:center;
+
+transform:
+
+translateY(20px) scale(.97);
+
+transition:
+
+transform .3s ease;
+
+}
+
+
+.unlock-modal.show
+.unlock-modal-content {
+
+transform:
+
+translateY(0) scale(1);
+
+}
+
+
+.modal-close {
+
+position:absolute;
+
+top:15px;
+
+right:18px;
+
+width:35px;
+
+height:35px;
+
+border:none;
+
+border-radius:50%;
+
+background:
+
+rgba(255,255,255,.08);
+
+color:white;
+
+font-size:24px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+.modal-close:hover {
+
+background:
+
+rgba(255,93,93,.25);
+
+transform:rotate(90deg);
+
+}
+
+
+.modal-icon {
+
+font-size:45px;
+
+margin-bottom:15px;
+
+}
+
+
+.unlock-modal-content h2 {
+
+margin-bottom:12px;
+
+}
+
+
+.unlock-modal-content > p {
+
+color:#aaa;
+
+line-height:1.6;
+
+}
+
+
+.modal-payment {
+
+margin:25px 0;
+
+padding:18px;
+
+border-radius:16px;
+
+background:
+
+rgba(255,255,255,.05);
+
+}
+
+
+.modal-payment > div {
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:12px 0;
+
+border-bottom:
+
+1px solid rgba(255,255,255,.08);
+
+}
+
+
+.modal-payment > div:last-child {
+
+border-bottom:none;
+
+}
+
+
+.modal-payment span {
+
+color:#aaa;
+
+}
+
+
+.modal-payment strong {
+
+color:#ffb700;
+
+}
+
+
+.modal-total strong {
+
+font-size:20px;
+
+}
+
+
+.modal-note {
+
+margin-bottom:20px;
+
+color:#ffb700!important;
+
+font-size:13px;
+
+}
 
 
 /* ================================
@@ -844,102 +1007,58 @@ transform:translateY(-4px);
 
 .card h2 {
 
-
 margin-bottom:20px;
-
 
 font-size:20px;
 
-
 }
-
-
-
-
 
 
 .stats {
 
-
 display:flex;
-
 
 flex-direction:column;
 
-
 gap:18px;
 
-
 }
-
-
-
-
-
 
 
 .stats div {
 
-
 display:flex;
-
 
 justify-content:space-between;
 
-
 padding-bottom:12px;
-
 
 border-bottom:
 
-
 1px solid rgba(255,255,255,.1);
 
-
 }
-
-
-
 
 
 .stats span {
 
-
 color:#aaa;
 
-
 }
-
-
-
 
 
 .stats strong {
 
-
 color:#ffb700;
 
-
 }
-
-
-
 
 
 .security {
 
-
 color:#00ff8c!important;
 
-
 }
-
-
-
-
-
-
-
 
 
 /* ================================
@@ -949,53 +1068,34 @@ color:#00ff8c!important;
 
 .chart {
 
-
 height:35px;
-
 
 background:
 
-
 rgba(255,255,255,.1);
-
 
 border-radius:50px;
 
-
 overflow:hidden;
-
 
 }
 
 
-
-
-
-
-
 .btc-fill {
-
 
 height:100%;
 
-
 width:100%;
-
 
 display:flex;
 
-
 align-items:center;
-
 
 justify-content:center;
 
-
 font-weight:700;
 
-
 background:
-
 
 linear-gradient(
 90deg,
@@ -1003,8 +1103,9 @@ linear-gradient(
 #ff7a00
 );
 
-
 }
+
+
 /* ================================
    Floating Bitcoin
 ================================ */
@@ -1012,42 +1113,29 @@ linear-gradient(
 
 .floating-bitcoin {
 
-
 position:fixed;
-
 
 right:40px;
 
-
 bottom:40px;
-
 
 width:80px;
 
-
 height:80px;
-
 
 display:flex;
 
-
 justify-content:center;
-
 
 align-items:center;
 
-
 border-radius:50%;
-
 
 font-size:45px;
 
-
 font-weight:800;
 
-
 background:
-
 
 linear-gradient(
 135deg,
@@ -1055,48 +1143,26 @@ linear-gradient(
 #ff7a00
 );
 
-
 box-shadow:
-
 
 0 0 50px rgba(255,183,0,.6);
 
-
 animation:
-
 
 floatBitcoin 4s infinite;
 
-
-
 }
-
-
-
-
-
 
 
 @keyframes floatBitcoin {
 
-
 50% {
-
 
 transform:translateY(-20px);
 
-
 }
 
-
 }
-
-
-
-
-
-
-
 
 
 /* ================================
@@ -1106,76 +1172,44 @@ transform:translateY(-20px);
 
 .toast {
 
-
 position:fixed;
-
 
 bottom:30px;
 
-
 left:50%;
-
 
 transform:
 
-
 translateX(-50%)
-
 
 translateY(100px);
 
-
 opacity:0;
-
 
 padding:15px 25px;
 
-
 border-radius:50px;
-
 
 background:
 
-
 rgba(20,20,20,.95);
-
 
 transition:.4s;
 
-
-
 }
-
-
-
-
-
 
 
 .toast.show {
 
-
 opacity:1;
-
 
 transform:
 
-
 translateX(-50%)
-
 
 translateY(0);
 
-
-
 }
-
-
-
-
-
-
-
 
 
 /* ================================
@@ -1185,244 +1219,27 @@ translateY(0);
 
 .footer {
 
-
 margin-top:45px;
-
 
 padding:25px;
 
-
 text-align:center;
-
 
 color:#aaa;
 
-
 font-size:14px;
-
 
 border-top:
 
-
 1px solid rgba(255,255,255,.1);
 
-
-
 }
-
-
-
-
-
-
-
 
 
 /* ================================
-   Mobile
+   Live Bitcoin Dashboard
 ================================ */
 
-
-@media(max-width:700px){
-
-
-body {
-
-
-padding:15px;
-
-
-}
-
-
-
-
-
-
-.header {
-
-
-flex-direction:column;
-
-
-align-items:flex-start;
-
-
-gap:20px;
-
-
-}
-
-
-
-
-
-
-.balance {
-
-
-font-size:40px;
-
-
-}
-
-
-
-
-
-
-.buttons {
-
-
-flex-direction:column;
-
-
-}
-
-
-
-
-
-
-.btn {
-
-
-width:100%;
-
-
-}
-
-
-
-
-
-
-.btn-whatsapp {
-
-
-width:100%;
-
-
-}
-
-
-
-
-
-
-.floating-bitcoin {
-
-
-width:60px;
-
-
-height:60px;
-
-
-font-size:35px;
-
-
-right:20px;
-
-
-bottom:20px;
-
-
-
-}
-
-
-
-}
-/* ===================================
-   Live Bitcoin Dashboard
-=================================== */
-
-.btc-holdings{
-    margin-top:15px;
-    color:#bfbfbf;
-    font-size:15px;
-}
-
-#btcAmount,
-#btcHoldings,
-#btcPrice{
-    color:#ffb700;
-    font-weight:700;
-}
-
-#portfolioValue{
-    transition:all .4s ease;
-}
-
-.price-up{
-    color:#00ff8c !important;
-    text-shadow:0 0 15px rgba(0,255,140,.45);
-}
-
-.price-down{
-    color:#ff5d5d !important;
-    text-shadow:0 0 15px rgba(255,80,80,.45);
-}
-
-.loading{
-    opacity:.6;
-}
-
-.live-dot{
-    display:inline-block;
-    width:10px;
-    height:10px;
-    margin-left:8px;
-    background:#00ff8c;
-    border-radius:50%;
-    animation:pulseLive 1.4s infinite;
-}
-
-@keyframes pulseLive{
-
-0%{
-transform:scale(.8);
-opacity:.5;
-}
-
-50%{
-transform:scale(1.2);
-opacity:1;
-}
-
-100%{
-transform:scale(.8);
-opacity:.5;
-}
-
-}
-
-.price-card{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-}
-
-.value-large{
-    font-size:56px;
-    font-weight:800;
-    color:#ffb700;
-}
-
-.value-small{
-    color:#bdbdbd;
-    font-size:16px;
-}
-
-.updated-time{
-    margin-top:12px;
-    color:#8d8d8d;
-    font-size:13px;
-}
-/* ===================================
-   Live Wallet Data
-=================================== */
 
 .btc-holdings {
 
@@ -1435,6 +1252,150 @@ font-size:15px;
 }
 
 
+#btcAmount,
+#btcHoldings,
+#btcPrice {
+
+color:#ffb700;
+
+font-weight:700;
+
+}
+
+
+#portfolioValue {
+
+transition:all .4s ease;
+
+}
+
+
+.price-up {
+
+color:#00ff8c!important;
+
+text-shadow:
+
+0 0 15px rgba(0,255,140,.45);
+
+}
+
+
+.price-down {
+
+color:#ff5d5d!important;
+
+text-shadow:
+
+0 0 15px rgba(255,80,80,.45);
+
+}
+
+
+.loading {
+
+opacity:.6;
+
+}
+
+
+.live-dot {
+
+display:inline-block;
+
+width:10px;
+
+height:10px;
+
+margin-left:8px;
+
+background:#00ff8c;
+
+border-radius:50%;
+
+animation:
+
+pulseLive 1.4s infinite;
+
+}
+
+
+@keyframes pulseLive {
+
+0% {
+
+transform:scale(.8);
+
+opacity:.5;
+
+}
+
+50% {
+
+transform:scale(1.2);
+
+opacity:1;
+
+}
+
+100% {
+
+transform:scale(.8);
+
+opacity:.5;
+
+}
+
+}
+
+
+.price-card {
+
+display:flex;
+
+flex-direction:column;
+
+gap:8px;
+
+}
+
+
+.value-large {
+
+font-size:56px;
+
+font-weight:800;
+
+color:#ffb700;
+
+}
+
+
+.value-small {
+
+color:#bdbdbd;
+
+font-size:16px;
+
+}
+
+
+.updated-time {
+
+margin-top:12px;
+
+color:#8d8d8d;
+
+font-size:13px;
+
+}
+
+
+/* ================================
+   Live Wallet Data
+================================ */
+
+
 #btcBalance {
 
 color:#ffb700;
@@ -1444,13 +1405,11 @@ font-weight:700;
 }
 
 
-
 #walletValue {
 
 transition:.4s ease;
 
 }
-
 
 
 #walletValue.loading,
@@ -1462,17 +1421,16 @@ opacity:.6;
 }
 
 
-
 .live-update {
 
-animation:valueUpdate .5s ease;
+animation:
+
+valueUpdate .5s ease;
 
 }
 
 
-
 @keyframes valueUpdate {
-
 
 0% {
 
@@ -1482,7 +1440,6 @@ opacity:.5;
 
 }
 
-
 100% {
 
 transform:scale(1);
@@ -1491,19 +1448,7 @@ opacity:1;
 
 }
 
-
 }
-
-
-
-#btcPrice {
-
-color:#ffb700;
-
-font-weight:800;
-
-}
-
 
 
 .wallet-error {
@@ -1511,113 +1456,42 @@ font-weight:800;
 color:#ff5d5d!important;
 
 }
-/* ===================================
-   Live Wallet Data Display
-=================================== */
 
-.btc-holdings {
-    margin-top: 15px;
-    color: #aaa;
-    font-size: 15px;
-}
 
-#btcBalance {
-    color: #ffb700;
-    font-weight: 700;
-}
-
-#walletValue {
-    transition: 0.4s ease;
-}
-
-#btcPrice {
-    color: #ffb700;
-    font-weight: 800;
-}
-
-.live-update {
-    animation: valueUpdate 0.5s ease;
-}
-
-@keyframes valueUpdate {
-    0% {
-        transform: scale(0.95);
-        opacity: 0.5;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.loading {
-    opacity: 0.6;
-}
-
-.wallet-error {
-    color: #ff5d5d !important;
-}
-/* ===================================
-   Fix Large Portfolio Balance Width
-=================================== */
-
-.cards {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
+/* ================================
+   Large Portfolio Balance
+================================ */
 
 
 .cards .card:first-child {
-    min-width: 0;
-}
 
+min-width:0;
+
+}
 
 
 #walletValue {
-    font-size: clamp(28px, 4vw, 48px);
-    white-space: nowrap;
-    letter-spacing: -1px;
-}
 
+font-size:
+
+clamp(28px,4vw,48px);
+
+white-space:nowrap;
+
+letter-spacing:-1px;
+
+}
 
 
 .balance {
-    overflow: visible;
-    width: 100%;
-}
 
+overflow:visible;
 
-
-/* Make balance card wider on desktop */
-
-@media(min-width:900px){
-
-    .cards .card:first-child {
-        grid-column: span 2;
-    }
+width:100%;
 
 }
 
 
-
-@media(max-width:700px){
-
-    #walletValue {
-
-        font-size:32px;
-        white-space:normal;
-        word-break:break-word;
-
-    }
-
-
-    .cards .card:first-child {
-
-        grid-column:span 1;
-
-    }
-
-}
 /* ================================
    Language Button
 ================================ */
@@ -1633,32 +1507,6 @@ gap:15px;
 
 }
 
-
-
-#languageBtn {
-
-cursor:pointer;
-
-}
-
-
-
-@media(max-width:700px){
-
-
-.header-actions {
-
-flex-direction:column;
-
-align-items:flex-start;
-
-}
-
-
-}
-/* ================================
-   Language Button Fix
-================================ */
 
 #languageBtn {
 
@@ -1680,162 +1528,9 @@ justify-content:space-between;
 }
 
 
-
-@media(max-width:700px){
-
-#languageBtn {
-
-width:auto;
-
-margin-right:0;
-
-}
-
-
-}
-/* ===================================
+/* ================================
    Private Login Screen
-=================================== */
-
-
-#loginScreen {
-
-position:fixed;
-
-inset:0;
-
-background:#000;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-z-index:9999;
-
-}
-
-
-
-.login-box {
-
-width:350px;
-
-padding:40px;
-
-background:
-
-rgba(255,255,255,.08);
-
-border:
-
-1px solid rgba(255,255,255,.2);
-
-border-radius:25px;
-
-backdrop-filter:blur(20px);
-
-text-align:center;
-
-}
-
-
-
-.login-logo {
-
-width:70px;
-
-height:70px;
-
-margin:auto;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-border-radius:50%;
-
-font-size:40px;
-
-font-weight:800;
-
-color:white;
-
-background:
-
-linear-gradient(
-135deg,
-#ffb700,
-#ff7a00
-);
-
-}
-
-
-
-.login-box h1 {
-
-margin-top:20px;
-
-}
-
-
-
-.login-box p {
-
-color:#aaa;
-
-margin-bottom:25px;
-
-}
-
-
-
-.login-box input {
-
-width:100%;
-
-padding:15px;
-
-margin-bottom:15px;
-
-border-radius:12px;
-
-border:none;
-
-outline:none;
-
-background:#111;
-
-color:white;
-
-font-size:16px;
-
-}
-
-
-
-#loginMessage {
-
-margin-top:15px;
-
-color:#ff5555;
-
-}
-
-
-
-body.logged-in #loginScreen {
-
-display:none;
-
-}
-/* ===================================
-   Private Login Overlay
-=================================== */
+================================ */
 
 
 #loginScreen {
@@ -1843,9 +1538,11 @@ display:none;
 position:fixed;
 
 top:0;
+
 left:0;
 
 width:100%;
+
 height:100%;
 
 background:#000;
@@ -1861,7 +1558,6 @@ z-index:99999;
 }
 
 
-
 .login-box {
 
 width:350px;
@@ -1872,14 +1568,17 @@ border-radius:25px;
 
 text-align:center;
 
-background:rgba(255,255,255,.08);
+background:
 
-border:1px solid rgba(255,255,255,.2);
+rgba(255,255,255,.08);
+
+border:
+
+1px solid rgba(255,255,255,.2);
 
 backdrop-filter:blur(20px);
 
 }
-
 
 
 .login-logo {
@@ -1902,14 +1601,15 @@ font-size:40px;
 
 font-weight:800;
 
-background:linear-gradient(
+background:
+
+linear-gradient(
 135deg,
 #ffb700,
 #ff7a00
 );
 
 }
-
 
 
 .login-box h1 {
@@ -1921,13 +1621,11 @@ color:white;
 }
 
 
-
 .login-box p {
 
 color:#aaa;
 
 }
-
 
 
 .login-box input {
@@ -1949,7 +1647,6 @@ color:white;
 }
 
 
-
 #loginMessage {
 
 color:#ff5555;
@@ -1957,9 +1654,185 @@ color:#ff5555;
 }
 
 
-
 body.logged-in #loginScreen {
 
 display:none;
+
+}
+
+
+/* ================================
+   Desktop Portfolio Width
+================================ */
+
+
+@media(min-width:900px) {
+
+.cards .card:first-child {
+
+grid-column:span 2;
+
+}
+
+}
+
+
+/* ================================
+   Mobile
+================================ */
+
+
+@media(max-width:700px) {
+
+
+body {
+
+padding:15px;
+
+}
+
+
+.header {
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+
+.balance {
+
+font-size:40px;
+
+}
+
+
+.buttons {
+
+flex-direction:column;
+
+}
+
+
+.btn {
+
+width:100%;
+
+}
+
+
+.btn-whatsapp {
+
+width:100%;
+
+}
+
+
+.floating-bitcoin {
+
+width:60px;
+
+height:60px;
+
+font-size:35px;
+
+right:20px;
+
+bottom:20px;
+
+}
+
+
+.header-actions {
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+
+#languageBtn {
+
+width:auto;
+
+margin-right:0;
+
+}
+
+
+#walletValue {
+
+font-size:32px;
+
+white-space:normal;
+
+word-break:break-word;
+
+}
+
+
+.cards .card:first-child {
+
+grid-column:span 1;
+
+}
+
+
+.blocked-header {
+
+flex-direction:column;
+
+}
+
+
+.blocked-status {
+
+white-space:normal;
+
+width:100%;
+
+text-align:center;
+
+}
+
+
+.blocked-btc {
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:8px;
+
+}
+
+
+.payment-row {
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:5px;
+
+}
+
+
+.unlock-modal-content {
+
+padding:30px 20px;
+
+}
+
+
+.modal-payment > div {
+
+gap:15px;
+
+}
 
 }
