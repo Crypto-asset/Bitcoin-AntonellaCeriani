@@ -1836,3 +1836,332 @@ gap:15px;
 }
 
 }
+/* ===================================
+   REAL PAYMENT STATUS
+   Clearly marked as simulation
+=================================== */
+
+.real-payment-ticket {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:22px;
+
+    padding:17px 20px;
+
+    border-radius:16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,255,140,.14),
+            rgba(0,255,140,.04)
+        );
+
+    border:
+        1px solid rgba(0,255,140,.45);
+
+    box-shadow:
+        0 0 25px rgba(0,255,140,.08);
+
+}
+
+
+.real-payment-icon {
+
+    width:46px;
+
+    height:46px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#00ff8c;
+
+    color:#062016;
+
+    font-size:25px;
+
+    font-weight:800;
+
+    box-shadow:
+        0 0 20px rgba(0,255,140,.35);
+
+}
+
+
+.real-payment-content {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:3px;
+
+}
+
+
+.real-payment-content strong {
+
+    color:#00ff8c;
+
+    font-size:14px;
+
+    font-weight:800;
+
+}
+
+
+.real-payment-content span {
+
+    color:#ddd;
+
+    font-size:13px;
+
+}
+
+
+.real-payment-content small {
+
+    display:inline-block;
+
+    width:max-content;
+
+    margin-top:4px;
+
+    padding:3px 7px;
+
+    border-radius:5px;
+
+    background:rgba(255,183,0,.12);
+
+    color:#ffb700;
+
+    font-size:9px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+}
+
+
+/* ===================================
+   REAL PAYMENT CONFIRMATION
+   Inside Unlock Modal
+=================================== */
+
+.real-payment-confirmation {
+
+    margin:22px 0;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    text-align:left;
+
+    background:
+        rgba(0,255,140,.055);
+
+    border:
+        1px solid rgba(0,255,140,.35);
+
+}
+
+
+.confirmation-header {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:15px;
+
+}
+
+
+.confirmation-check {
+
+    width:40px;
+
+    height:40px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#00ff8c;
+
+    color:#062016;
+
+    font-size:21px;
+
+    font-weight:800;
+
+}
+
+
+.confirmation-header strong {
+
+    display:block;
+
+    color:#00ff8c;
+
+    font-size:13px;
+
+}
+
+
+.confirmation-header small {
+
+    display:block;
+
+    margin-top:3px;
+
+    color:#999;
+
+    font-size:9px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+
+.confirmation-details {
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.confirmation-details div {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:9px 0;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.07);
+
+}
+
+
+.confirmation-details div:last-child {
+
+    border-bottom:none;
+
+}
+
+
+.confirmation-details span {
+
+    color:#999;
+
+    font-size:12px;
+
+}
+
+
+.confirmation-details strong {
+
+    color:#00ff8c;
+
+    font-size:12px;
+
+}
+
+
+/* ===================================
+   Real label on modal note
+=================================== */
+
+.unlock-modal-content .modal-note {
+
+    padding:10px 12px;
+
+    border-radius:8px;
+
+    background:
+        rgba(255,183,0,.06);
+
+    color:#ffb700!important;
+
+    font-size:11px;
+
+}
+
+
+/* ===================================
+   Mobile
+=================================== */
+
+@media(max-width:700px) {
+
+    .real-payment-ticket {
+
+        align-items:flex-start;
+
+        padding:15px;
+
+    }
+
+
+    .real-payment-icon {
+
+        width:40px;
+
+        height:40px;
+
+        font-size:21px;
+
+    }
+
+
+    .payment-content strong {
+
+        font-size:12px;
+
+    }
+
+
+    .confirmation-details div {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:3px;
+
+    }
+
+}
