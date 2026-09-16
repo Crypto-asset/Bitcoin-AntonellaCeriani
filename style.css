@@ -1837,11 +1837,11 @@ gap:15px;
 
 }
 /* ===================================
-   REAL PAYMENT STATUS
-   Clearly marked as simulation
+   PAYMENT STATUS
+  
 =================================== */
 
-.real-payment-ticket {
+.payment-ticket {
 
     display:flex;
 
@@ -1871,7 +1871,7 @@ gap:15px;
 }
 
 
-.real-payment-icon {
+.payment-icon {
 
     width:46px;
 
@@ -1901,7 +1901,7 @@ gap:15px;
 }
 
 
-.real-payment-content {
+.payment-content {
 
     display:flex;
 
@@ -1912,7 +1912,7 @@ gap:15px;
 }
 
 
-.real-payment-content strong {
+.payment-content strong {
 
     color:#00ff8c;
 
@@ -1923,7 +1923,7 @@ gap:15px;
 }
 
 
-.real-payment-content span {
+.payment-content span {
 
     color:#ddd;
 
@@ -1932,7 +1932,7 @@ gap:15px;
 }
 
 
-.real-payment-content small {
+.payment-content small {
 
     display:inline-block;
 
@@ -1958,11 +1958,11 @@ gap:15px;
 
 
 /* ===================================
-   REAL PAYMENT CONFIRMATION
+   PAYMENT CONFIRMATION
    Inside Unlock Modal
 =================================== */
 
-.real-payment-confirmation {
+.payment-confirmation {
 
     margin:22px 0;
 
@@ -2102,7 +2102,7 @@ gap:15px;
 
 
 /* ===================================
-   Real label on modal note
+   label on modal note
 =================================== */
 
 .unlock-modal-content .modal-note {
@@ -2127,7 +2127,7 @@ gap:15px;
 
 @media(max-width:700px) {
 
-    .real-payment-ticket {
+    .payment-ticket {
 
         align-items:flex-start;
 
@@ -2136,7 +2136,7 @@ gap:15px;
     }
 
 
-    .real-payment-icon {
+    .payment-icon {
 
         width:40px;
 
