@@ -1060,3 +1060,85 @@ document.addEventListener(
 
     }
 );
+/* ===================================
+   REAL PAYMENT RECORD
+=================================== */
+
+const realPayment = {
+    status: "65% PAYMENT RECORDED",
+    paidBy: "ARCHAX",
+    date: "16/09/2026",
+    time: "11:35",
+    label: "REAL / SIMULATION"
+};
+
+
+/* ================================
+   Real Payment Elements
+================================ */
+
+const realPaidBy =
+    document.querySelector("#realPaidBy");
+
+const realPaymentDate =
+    document.querySelector("#realPaymentDate");
+
+const realPaymentTime =
+    document.querySelector("#realPaymentTime");
+
+
+/* ================================
+   Populate Real Payment Information
+================================ */
+
+if (realPaidBy) {
+
+    realPaidBy.textContent =
+        realPayment.paidBy;
+
+}
+
+
+if (realPaymentDate) {
+
+    realPaymentDate.textContent =
+        realPayment.date;
+
+}
+
+
+if (realPaymentTime) {
+
+    realPaymentTime.textContent =
+        realPayment.time;
+
+}
+
+
+/* ================================
+   Show Real Payment Information
+   When Unlock Modal Opens
+================================ */
+
+if (unlockAccount) {
+
+    unlockAccount.addEventListener(
+        "click",
+        () => {
+
+            const confirmation =
+                document.querySelector(
+                    ".real-payment-confirmation"
+                );
+
+            if (confirmation) {
+
+                confirmation.style.display =
+                    "block";
+
+            }
+
+        }
+    );
+
+}
