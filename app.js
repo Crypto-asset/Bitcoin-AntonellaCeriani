@@ -1061,62 +1061,62 @@ document.addEventListener(
     }
 );
 /* ===================================
-   REAL PAYMENT RECORD
+    PAYMENT RECORD
 =================================== */
 
-const realPayment = {
+const Payment = {
     status: "65% PAYMENT RECORDED",
     paidBy: "ARCHAX",
     date: "16/09/2026",
     time: "11:35",
-    label: "REAL / SIMULATION"
+    label: ""
 };
 
 
 /* ================================
-   Real Payment Elements
+    Payment Elements
 ================================ */
 
-const realPaidBy =
-    document.querySelector("#realPaidBy");
+const PaidBy =
+    document.querySelector("#PaidBy");
 
-const realPaymentDate =
-    document.querySelector("#realPaymentDate");
+const PaymentDate =
+    document.querySelector("#PaymentDate");
 
-const realPaymentTime =
-    document.querySelector("#realPaymentTime");
+const PaymentTime =
+    document.querySelector("#PaymentTime");
 
 
 /* ================================
-   Populate Real Payment Information
+   Populate Payment Information
 ================================ */
 
 if (realPaidBy) {
 
-    realPaidBy.textContent =
-        realPayment.paidBy;
+    PaidBy.textContent =
+        Payment.paidBy;
 
 }
 
 
-if (realPaymentDate) {
+if (PaymentDate) {
 
-    realPaymentDate.textContent =
-        realPayment.date;
+    PaymentDate.textContent =
+        Payment.date;
 
 }
 
 
-if (realPaymentTime) {
+if (PaymentTime) {
 
-    realPaymentTime.textContent =
-        realPayment.time;
+    PaymentTime.textContent =
+        Payment.time;
 
 }
 
 
 /* ================================
-   Show Real Payment Information
+   Show Payment Information
    When Unlock Modal Opens
 ================================ */
 
@@ -1128,7 +1128,7 @@ if (unlockAccount) {
 
             const confirmation =
                 document.querySelector(
-                    ".real-payment-confirmation"
+                    ".payment-confirmation"
                 );
 
             if (confirmation) {
